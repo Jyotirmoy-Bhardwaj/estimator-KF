@@ -1,32 +1,18 @@
 # state-Estimation-KF
+
+# wdnOptimization
 <p align=justify>
-This is an **integer classification** problem addressed by deep learning. In this work, the objective is to design a data-driven controller, which could estimate the pump scheduling of a given water distribution network in real-time. The data-driven controller is designed from a feed-forward deep neural network,  and the necessary dataset is obtained from the state-of-the-art mixed-integer solver. One may question the necessity to design a data-driven controller even though there exists mixed-integer solvers (such as Gurobi). The primary reason is that computing an optimal pump scheduling of a large-scale water distribution network is an NP-Hard problem. Solving such problems using traditional optimization solvers is a computationally inefficient approach. Therefore, we presented a data-driven controller using deep learning, which can potentially estimate the time-ahead pump scheduling given the estimated nodal water demand. This controler is tested for various time horizons such as T = 10 hrs, T=15 Hrs, T= 20 Hrs, and T=24 Hrs). The results demonstrates that this controller can potentially estimate the time ahead pump scheduling with error < 0.01. Kindly **refer** the paper <a href="https://ieeexplore.ieee.org/abstract/document/9551168">(link) </a> .      
-
-*An example of a Water Distribution Network [a. Diagram] [b. Training Loss] [c. Computation Time]:
-<p float="left">
-  <img src="docs/images/wdn_1.png" width="300" />
-  <img src="docs/images/accuracy_3_layer.png" width="250" /> 
-  <img src="docs/images/computationTime.png" width="250" />
-</p>
-
+This work demonstrates how one can obtain a feasible solution to water distribution network Optimization problems. In general, computing optimal solutions of such formulations are NP-Hard given non-convex constraints. We can obtain an approximate solution by relaxing some of the non-convex constraints.  While applying the principles of optimization in a WDN, the Hazen–Williams equations are used to relate the flow of water in a pipe with the physical properties of the pipe such as pressure drop, flow measurements, etc. However, due to the non-linear/non-convex nature of the Hazen-Williams equation, pure linear programming cannot be directly applied to these equations, and heuristic techniques must need to be used. In this work, we solve a nonconvex optimization problem; where we compute the optimal dimensions of the pipes of the network. This is a particularly important problem, and it is necessary to compute an optimal solution while designing the physical infrastructure of the water network.  
+ 
+ 
 # Requirements:
-- [`TensorFlow`](https://www.tensorflow.org/)
-- [`Keras`](https://keras.io/)
-- [`numpy`](https://numpy.org/devdocs/)
-- [`Gurobi`](https://www.gurobi.com/)
-- [`matplotlib`](https://matplotlib.org/)
-- [`pandas`](https://pandas.pydata.org/)
-- [`jupyter`](https://jupyter.org/)
-
-## Installation
-This framework is suitable for Python >= 3.7 environment. In addition, to generate relevant dataset, kindly use functionalities of Gurobi Solver (https://www.gurobi.com/resource/modeling-examples-using-the-gurobi-python-api-in-jupyter-notebook/)
-
+- [`cvxOpt`](http://cvxr.com/cvx/)
+- [`matLab`](https://se.mathworks.com/products/matlab.html)
 
 ## License
 The project is licensed under the [GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html).
 
-## Citing Work
+ ## Citing Work
 
-* **Dimitris Bertsimas and Bartolomeo Stellato**. *Online Mixed-Integer Optimization in Milliseconds*. arXiv (2021). https://arxiv.org/pdf/1907.02206.pdf.
-
+* **Bragalli, Cristiana, et al. **. *On the optimal design of water distribution networks: a practical MINLP approach.*. Optimization and Engineering 13.2 (2012): 219-246. https://link.springer.com/article/10.1007/s11081-011-9141-7
 
