@@ -1,2 +1,2 @@
 
-shoot me an email, if you need additional info.
+shoot me a message, if you need additional info.
