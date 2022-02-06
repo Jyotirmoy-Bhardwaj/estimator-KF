@@ -26,4 +26,4 @@ The project is licensed under the [GNU General Public License v3.0](https://www.
 
  ## Citing Work
 
-* **Lee, Y. H., and V. P. Singh **. *Tank model using Kalman filter.*. Journal of hydrologic engineering 4.4 (1999): 344-349.
+* **Lee, Y. H., and V. P. Singh **. *Tank model using Kalman filter.* Journal of hydrologic engineering 4.4 (1999): 344-349.
