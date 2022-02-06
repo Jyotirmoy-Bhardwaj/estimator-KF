@@ -1,8 +1,20 @@
 # state-Estimation-KF
 
-# wdnOptimization
 <p align=justify>
-This work demonstrates how one can obtain a feasible solution to water distribution network Optimization problems. In general, computing optimal solutions of such formulations are NP-Hard given non-convex constraints. We can obtain an approximate solution by relaxing some of the non-convex constraints.  While applying the principles of optimization in a WDN, the Hazen–Williams equations are used to relate the flow of water in a pipe with the physical properties of the pipe such as pressure drop, flow measurements, etc. However, due to the non-linear/non-convex nature of the Hazen-Williams equation, pure linear programming cannot be directly applied to these equations, and heuristic techniques must need to be used. In this work, we solve a nonconvex optimization problem; where we compute the optimal dimensions of the pipes of the network. This is a particularly important problem, and it is necessary to compute an optimal solution while designing the physical infrastructure of the water network.  
+Water demand management is one of the fundamental challenges of any urban Water Distribution Network
+(WDN). In WDNs, multiple cascaded water tanks (or reservoirs) are the major source of water supply. Hence,
+maintaining the satisfactory water level in distribution tanks in an online fashion, as per user demand, is the most important
+challenge of any WDN. In addition, it is very important to estimate the water levels of individual tanks as per
+the varying local consumer demands. This continuous in-flow and out-flow of water affect the water level in
+distribution tanks, where Kalman filter (KF) can be used to estimate the exact water level at the exact moment
+of time. This report studies the KF algorithm to predict and estimate the water level of multiple interconnected
+tanks. A WDN model is proposed in the report to derive supporting state equations. Two different cases are
+considered to test the KF which are as follows:
+ 
+• Estimation of water level in multiple interconnected tanks in proposed WDN?
+ 
+• Estimation of water level in multiple interconnected tanks in proposed WDN, in the scenario of non-availability of observations in one of the tanks?
+
  
  
 # Requirements:
@@ -14,5 +26,4 @@ The project is licensed under the [GNU General Public License v3.0](https://www.
 
  ## Citing Work
 
-* **Bragalli, Cristiana, et al. **. *On the optimal design of water distribution networks: a practical MINLP approach.*. Optimization and Engineering 13.2 (2012): 219-246. https://link.springer.com/article/10.1007/s11081-011-9141-7
-
+* **Lee, Y. H., and V. P. Singh **. *Tank model using Kalman filter.*. Journal of hydrologic engineering 4.4 (1999): 344-349.
