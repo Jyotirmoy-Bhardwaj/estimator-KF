@@ -1,4 +1,4 @@
-# Estimator - kalmanFilter
+# estimator - kalmanFilter
 
 <p align=justify>
 This is an **estimation problem**.Water demand management is one of the fundamental challenges of any urban Water Distribution Network
