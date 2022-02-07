@@ -4,7 +4,7 @@
 This is an **estimation problem**.Water demand management is one of the fundamental challenges of any urban Water Distribution Network
 (WDN). In WDNs, multiple cascaded water tanks (or reservoirs) are the major source of water supply. Hence,
 maintaining the satisfactory water level in distribution tanks in an online fashion, as per user demand, is the most important
-challenge of any WDN. In addition, it is very important to estimate the water levels of individual tanks as per
+challenge of any WDN authorities. In addition, it is very important to estimate the water levels of individual tanks as per
 the varying local consumer demands. This continuous in-flow and out-flow of water affect the water level in
 distribution tanks, where Kalman filter (KF) can be used to estimate the exact water level at the exact moment
 of time. This report studies the KF algorithm to predict and estimate the water level of multiple interconnected
